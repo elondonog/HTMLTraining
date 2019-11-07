@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Edward's Hobbies</title>
+
+    <link href="../styles/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500i&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>The hobbies I enjoy</h1>
+    <p>When editing html text yo can make use of advance features for editing,
+        this features are for instance:</p>
+    <p> A list of term definition.<br>
+
+        It should be like this:<br>
+        use the tag &lt;dl&gt; to define a list of terms difinitions. then follow with<br>
+        the pairs of term and definition as follow:<br>
+        each term should be described as &lt;dt&gt;theTermToDefine&lt;/dt&gt; and de descriptin<br>
+        of the term with the html tag &lt;dd&gt;DefinitionOfTermHere&lt;/dd&gt; and finally<br>
+        add the tag to close de description list as: &lt;dl&gt; the example in here:<br>
+        <dl>
+            <dt>DescriptionList</dt>
+            <dd>Is a list of definitions made with html tags similar to a glosary</dd>
+            <dt>Description term</dt>
+            <dd>It is each one of the terms used in the description list to be defined</dd>
+            <dt>Description definition</dt>
+            <dd>It is the definitions or meaning of the term within the defintion list</dd>
+        </dl>
+    </p>
+    <p>This paragraph is about adding a quote in HTML. There is also
+        a tag for this porpose called &lt;blockquote&gt; within this tag you must add the text quoted adding
+        the attribute cite to the tag so it can link to the source of the quote. &lt;/blockquote&gt;.
+        Lets see an example of blockquote
+        <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+            <p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block Quotation
+                    Element</em>)
+                indicates that the enclosed text is an extended quotation.</p>
+        </blockquote>
+    </p>
+
+
+    <p>In addition to the previous blockquote you could also add an inline quote.
+        to show this I will add the quote with <code>&lt;q&gt;</code> - is
+        <q
+            cite="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting#Citations">
+            To check how to create <a target="_blank"
+                href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting#Citations">
+                inline quotation </a>according to mozilla</q>
+    </p>
+
+    <p>This is an example of inline quote <a href="https://www.brainyquote.com/quotes/confucius_119275">Confucius</a>
+        <q cite="https://www.brainyquote.com/quotes/confucius_119275">
+            The will to win, the desire to
+            succed,
+            the urge to reach your full potential... these are the keys that will unlock the door to personal
+            excellence.</q>
+    </p>
+
+    <p>Another example of blockquote is shown here:
+        <a href="https://www.brainyquote.com/quotes/confucius_119275">Confucious</a>
+        <blockquote>Life is really simple, but we insist on making it complicated.
+        </blockquote>
+    </p>
+
+    <p>HTML also give as a way to manage abbreviations using the tag &lt;abbr&gt;theAbbreviations&lt;abbr&gt;
+        for instance: <abbr title="HyperText Markup Language">HTML</abbr> to structure our web documents.
+        as you can see the format of abbreviation change but the meaning is kept hidden within the tag property.
+    </p>
+
+    <p class="programmingClass"> As you can see html also
+        lets you to markup contact details, for instanse, the address with the tag &lt;address&gt; check it here:
+        <address>Edward Londono, <br>Cll 10 # 24 - 75, <br>Medellin Colombia</address>
+    </p>
+    <p>HTML tags are great for editing text in different ways. Now lets see super<sup>index</sup> and
+        sub<sub>index</sub>.
+        How does it look to you? It is great, isn't it?
+    </p>
+    <p class="programmingClass">There are also tags to represent computer code:
+        &lt;code&gt; to write this code with different format&lt;/&gt; like
+        <code>
+                <br>function main()<br>{<br> int i = 0; <br> i++;<br>}<br>
+        </code>
+    </p>
+    <p>An alternative to keep identation and white spaces in the html content it is written, plz use the tag
+        &lt;pre&gt;
+        <pre>the content
+
+        with the white space you want
+                will be shown idented or
+
+
+                modified as you want.
+        </pre>
+
+        You can also markup variables <var>
+            thisVariable</var> with different format by using the tag &lt;var&gt;
+    </p>
+    <p>To markup keyboad input use the tag &lt;kbd&gt; to look like <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>+<kbd>A</kbd>.
+    </p>
+    <p>But in case you want to markup computer output use &lt;samp&gt; tag: <samp>Ping mozilla.org (1.1.1.1): 56 Data
+            Bytes</samp>
+    </p>
+    <p>
+        Finally to markup time and dates use de tag &lt;time&gt; for instance:<br>
+        <prep>
+            &lt;time datetime="2016-01-20" &gt;20 January 2016&lt;/time&gt; will look like:
+
+            <time datetime="2016-01-20">20 January 2016</time>
+
+            other options are: <br><br>
+            <!-- Standard simple date -->
+            <time datetime="2016-01-20">20 January 2016</time><br>
+            <!-- Just year and month -->
+            <time datetime="2016-01">January 2016</time><br>
+            <!-- Just month and day -->
+            <time datetime="01-20">20 January</time><br>
+            <!-- Just time, hours and minutes -->
+            <time datetime="19:30">19:30</time><br>
+            <!-- You can do seconds and milliseconds too! -->
+            <time datetime="19:30:01.856">19:30:01.856</time><br>
+            <!-- Date and time -->
+            <time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time><br>
+            <!-- Date and time with timezone offset-->
+            <time datetime="2016-01-20T19:30+01:00">7.30pm, 20 January 2016 is 8.30pm in France</time><br>
+            <!-- Calling out a specific week number-->
+            <time datetime="2016-W04">The fourth week of 2016</time><br>
+        </prep>
+    </p>
+    <p>asdfasd df ef ddh df a er fgd ng dy uetynr tyut rye rtyw t bw
+        asdfasd df ef ddh df a er fgd ng dy uetynr tyut rye rtyw t bw
+        asdfasd df ef ddh df a er fgd ng dy uetynr tyut rye rtyw t bw
+        asdfasd df ef ddh df a er fgd ng dy uetynr tyut rye rtyw t bw
+        asdfasd df ef ddh df a er fgd ng dy uetynr tyut rye rtyw t bw
+        asdfasd df ef ddh df a er fgd ng dy uetynr tyut rye rtyw t bw
+        asdfasd df ef ddh df a er fgd ng dy uetynr tyut rye rtyw t bw
+        asdfasd df ef ddh df a er fgd ng dy uetynr tyut rye rtyw t bw
+    </p>
+
+    <p id="climbing">
+        All this content is about climbing and the paths I follow every day.
+        It is not easy to keep up on the newest routes while you are working
+        but lets try.
+    </p>
+</body>
